@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Juan">
+        <title>¡Sube tus archivos!</title>
+        <link rel="stylesheet" href="style.css">
+        <!--             font awesome        -->
+        <link rel="stylesheet" href="fa/css/all.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <img class="nb-logo" width="50px" src="img/logo.png" alt="Logo" srcset="" title="Z logo">
+            <ul class="menubar">
+                <li class="menubar-link"><a href="https://pastebin.com/u/__zero__" class="-link">
+                    <i class="fas fa-paste"> </i> Pastebin</a></li>
+                <li class="menubar-link"><a href="dir.php" class="-link">
+                        <i class="fas fa-folder-open"></i> Directorio</a></li>
+                <li class="menubar-link"><a href="#" class="-link">
+                        <i class="fas fa-code"></i> Source</a></li>
+                <li class="menubar-link"><a href="../" class="-link">
+                        <i class="fas fa-plus"></i> Más proyectos</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <div class="form-file">
+                <form action="sendfile.php" class="file-up" method="POST" enctype="multipart/form-data">
+                    <label class="f-u-label" for="file-uploader-input" title="Tamaño maximo permitido: 0.5GB">
+                        <i class="fas fa-file"></i> Seleccionar archivo
+                    </label>
+                    <!-- File input HIDDEN -->
+                    <input type="file" name="file-input-uploadje" id="file-uploader-input" style="display:none">
+                    <!--div class="f-img-ext" id="fiext"></div-->
+                    <img src="img/exts/default.png" alt="" class="f-img-ext" id="fiext" width="256px">
+                    <div class="files-list" id="f-list">File name</div>
+                    
+                    <button class="upload-file">
+                        <i class="fas fa-upload"></i> Subir
+                    </button>                
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            <p class="footer-content">Descarga los iconos de los archivos desde 
+                <a href="https://www.dreamstale.com/free-download-50-file-type-vector-icons/" target="_blank" rel="noopener noreferrer">Aqui</a>
+            </p>
+        </div>
+
+        <script src="fil.js"></script>
+    </body>
+</html>
